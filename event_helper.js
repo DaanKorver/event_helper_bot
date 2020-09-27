@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const config = require("./config.json")
+// const config = require("./config.json")
+const dotenv = require('dotenv');
+dotenv.config()
 let creatingEvent = false;
 let eventObj = {
     title: "",
@@ -289,4 +291,4 @@ function processEvent(step, msg) {
     eventStep++;
 }
 
-client.login(config.token)
+client.login(process.env.TOKEN)
