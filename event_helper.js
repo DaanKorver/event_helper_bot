@@ -1,8 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+//Run this for dev
 // const config = require("./config.json")
-const dotenv = require('dotenv');
-dotenv.config()
+// const dotenv = require('dotenv');
+// dotenv.config()
 let creatingEvent = false;
 let eventObj = {
     title: "",
